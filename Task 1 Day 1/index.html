@@ -6,7 +6,7 @@
     <link href="./src/output.css" rel="stylesheet" />
     <title>Stripe pricing card UI</title>
   </head>
-  <body class="bg-gray-100">
+  <body class="bg-gray-100 lg:mx-12">
     <section class="flex flex-col justify-center items-center gap-7 pt-20">
       <div class="mx-5">
         <p class="text-4xl md:text-5xl font-bold text-gray-950 text-center">
@@ -31,6 +31,275 @@
           class="bg-green-100 w-fit text-[0.85rem] text-green-950 rounded-2xl px-2.5"
         >
           Save 20%
+        </div>
+      </div>
+    </section>
+    <section
+      class="md:grid md:grid-cols-2 md:gap-5 justify-center items-center lg:grid-cols-3"
+    >
+      <!-- Price Card 1-->
+      <section
+        class="bg-white mx-5 py-8 relative top-14 rounded-lg border border-gray-300 hover:shadow-lg md:hover:drop-shadow-md hover:transition-transform duration-500 ease-in-out"
+      >
+        <div class="mx-6 flex flex-col gap-7">
+          <div>
+            <p class="font-bold text-2xl">Starter</p>
+            <p class="text-gray-700 pt-2">
+              Perfect for startups and small projects just getting started
+            </p>
+          </div>
+
+          <div>
+            <p class="text-gray-700">
+              <span class="font-bold text-black text-4xl">$0</span>/mo
+            </p>
+          </div>
+          <div class="text-gray-700 flex flex-col gap-5">
+            <div class="flex items-center gap-3">
+              <img
+                src="https://img.icons8.com/?size=100&id=98955&format=png&color=7950F2"
+                alt="Check mark"
+                class="w-5"
+              />
+              <p>Standard Analytics</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="https://img.icons8.com/?size=100&id=98955&format=png&color=7950F2"
+                alt="Check mark"
+                class="w-5"
+              />
+              <p>5 team members</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="https://img.icons8.com/?size=100&id=98955&format=png&color=7950F2"
+                alt="Check mark"
+                class="w-5"
+              />
+              <p>1,000 API requests/day</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="https://img.icons8.com/?size=100&id=98955&format=png&color=7950F2"
+                alt="Check mark"
+                class="w-5"
+              />
+              <p>Community support</p>
+            </div>
+          </div>
+          <button
+            class="border border-violet-900 text-violet-800 text-sm py-1.5 rounded-2xl mx-5"
+          >
+            Start for free
+          </button>
+        </div>
+      </section>
+      <!-- Price Card 2-->
+      <section
+        class="bg-white mx-5 py-8 relative top-14 rounded-lg my-6 border-2 border-violet-800"
+      >
+        <div
+          class="bg-violet-800 p-0.5 w-fit text-white px-3 rounded-xl relative bottom-11 mx-auto"
+        >
+          <p class="text-[0.8rem] font-bold">MOST POPULAR</p>
+        </div>
+        <div class="mx-6 flex flex-col gap-7">
+          <div>
+            <p class="font-bold text-2xl">Pro</p>
+            <p class="text-gray-700 pt-2">
+              For growing businesses that need advanced features and power.
+            </p>
+          </div>
+
+          <div>
+            <p class="text-gray-700">
+              <span class="font-bold text-black text-4xl">$29</span>/mo
+            </p>
+          </div>
+          <div class="text-gray-700 flex flex-col gap-5">
+            <div class="flex items-center gap-3">
+              <img
+                src="https://img.icons8.com/?size=100&id=98955&format=png&color=7950F2"
+                alt="Check mark"
+                class="w-5"
+              />
+              <p>Advanced analytics</p>
+              <img
+                src="https://img.icons8.com/?size=100&id=77&format=png&color=737373"
+                alt="Info circle"
+                class="w-4"
+              />
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="https://img.icons8.com/?size=100&id=98955&format=png&color=7950F2"
+                alt="Check mark"
+                class="w-5"
+              />
+              <p>Unlimited team members</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="https://img.icons8.com/?size=100&id=98955&format=png&color=7950F2"
+                alt="Check mark"
+                class="w-5"
+              />
+              <p>Unlimited API requests</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="https://img.icons8.com/?size=100&id=98955&format=png&color=7950F2"
+                alt="Check mark"
+                class="w-5"
+              />
+              <p>Priority email support</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="https://img.icons8.com/?size=100&id=98955&format=png&color=7950F2"
+                alt="Check mark"
+                class="w-5"
+              />
+              <p>Customer domains</p>
+            </div>
+          </div>
+          <button
+            class="border border-violet-900 text-white text-sm py-1.5 rounded-2xl mx-5 bg-violet-900 hover:bg-violet-700"
+          >
+            Get Started
+          </button>
+        </div>
+      </section>
+      <!-- Price Card 3-->
+      <section
+        class="bg-white mx-5 py-8 relative top-14 rounded-lg border border-gray-300 hover:shadow-lg md:hover:drop-shadow-md hover:transition-transform duration-500 ease-in-out"
+      >
+        <div class="mx-6 flex flex-col gap-7">
+          <div>
+            <p class="font-bold text-2xl">Enterprise</p>
+            <p class="text-gray-700 pt-2">
+              Custom solutions for large organizations with specific needs.
+            </p>
+          </div>
+
+          <div>
+            <p class="text-gray-700">
+              <span class="font-bold text-black text-4xl">$99</span>/mo
+            </p>
+          </div>
+          <div class="text-gray-700 flex flex-col gap-5">
+            <div class="flex items-center gap-3">
+              <img
+                src="https://img.icons8.com/?size=100&id=98955&format=png&color=7950F2"
+                alt="Check mark"
+                class="w-5"
+              />
+              <p>Dedicated account manager</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="https://img.icons8.com/?size=100&id=98955&format=png&color=7950F2"
+                alt="Check mark"
+                class="w-5"
+              />
+              <p>SLA 99.99% uptime</p>
+              <img
+                src="https://img.icons8.com/?size=100&id=77&format=png&color=737373"
+                alt="Info circle"
+                class="w-4"
+              />
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="https://img.icons8.com/?size=100&id=98955&format=png&color=7950F2"
+                alt="Check mark"
+                class="w-5"
+              />
+              <p>SSO & Advanced Security</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="https://img.icons8.com/?size=100&id=98955&format=png&color=7950F2"
+                alt="Check mark"
+                class="w-5"
+              />
+              <p>Custom contracts</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="https://img.icons8.com/?size=100&id=98955&format=png&color=7950F2"
+                alt="Check mark"
+                class="w-5"
+              />
+              <p>24/7 phone support</p>
+            </div>
+          </div>
+          <button
+            class="border text-white text-sm py-1.5 rounded-2xl mx-5 bg-gray-950 hover:bg-gray-900"
+          >
+            Contact Sales
+          </button>
+        </div>
+      </section>
+    </section>
+    <section class="relative top-36 mx-6">
+      <hr class="text-gray-500 pb-16 md:hidden lg:block" />
+      <div class="flex flex-col justify-center items-center gap-5 pb-24">
+        <p class="font-semibold text-gray-600 pb-7">
+          TRUSTED BY INNOVATIVE TEAMS AT
+        </p>
+        <div>
+          <div
+            class="opacity-40 text-2xl font-semibold grid grid-cols-2 md:grid-cols-4 pb-14 gap-7"
+          >
+            <div class="flex gap-1 items-center">
+              <img
+                src="https://img.icons8.com/?size=100&id=100239&format=png&color=737373"
+                alt="Icme Icon"
+                class="w-6"
+              />
+              <p>Acme</p>
+            </div>
+            <div class="flex gap-1 items-center">
+              <img
+                src="https://img.icons8.com/?size=100&id=100239&format=png&color=737373"
+                alt="Icme Icon"
+                class="w-6"
+              />
+              <p>Globex</p>
+            </div>
+            <div class="flex gap-1 items-center">
+              <img
+                src="https://img.icons8.com/?size=100&id=100239&format=png&color=737373"
+                alt="Icme Icon"
+                class="w-6"
+              />
+              <p>Soylent</p>
+            </div>
+            <div class="flex gap-1 items-center">
+              <img
+                src="https://img.icons8.com/?size=100&id=100239&format=png&color=737373"
+                alt="Icme Icon"
+                class="w-6"
+              />
+              <p>Initech</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="font-bold text-2xl text-center">Have specific questions?</p>
+          <p class="text-gray-700 text-center pt-5">
+            Our support team is available 24/7 to help you find the right plan .
+          </p>
+        </div>
+        <div class="text-violet-900 flex gap-1 items-center">
+          <p>Contact Support</p>
+          <img
+            src="https://img.icons8.com/?size=100&id=39777&format=png&color=7950F2"
+            alt="Arrow"
+            class="w-5"
+          />
         </div>
       </div>
     </section>
