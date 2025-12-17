@@ -6,7 +6,7 @@
     <link href="./src/output.css" rel="stylesheet" />
     <title>Dashboard Stats UI Card</title>
   </head>
-  <body>
+  <body class="bg-gray-100">
     <section
       class="flex flex-col mx-6 md:mx-8 lg:mx-16 md:flex-row md:justify-between md:items-end"
     >
@@ -23,6 +23,218 @@
           alt="Live dot"
           class="w-4"
         />
+      </div>
+    </section>
+
+    <section
+      class="mx-6 md:mx-8 lg:mx-16 pt-7 md:grid md:grid-cols-2 md:gap-6 md:justify-center md:items-center"
+    >
+      <!-- First Card -->
+      <div class="pb-7">
+        <section>
+          <p class="font-bold text-gray-800/95 text-lg pb-6">
+            Key Performance Indicators
+          </p>
+          <div class="bg-violet-800 text-white px-6 py-6 rounded-2xl">
+            <div>
+              <div class="flex justify-between items-center">
+                <p class="text-2xl bg-white/25 py-0.5 px-3.5 rounded-md">$</p>
+                <div
+                  class="flex items-center gap-1 bg-white/25 py-0.5 px-1.5 rounded-2xl"
+                >
+                  <p class="text-sm">+18.2%</p>
+                  <img
+                    src="https://img.icons8.com/?size=100&id=14906&format=png&color=FFFFFF"
+                    alt="Arrow icon"
+                    class="w-4"
+                  />
+                </div>
+              </div>
+              <div class="pt-3 flex flex-col gap-2">
+                <p>Total Revenue</p>
+                <p class="text-5xl font-bold">$84,295</p>
+                <p class="font-normal text-white/70">Gross Revenue</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        class="bg-white py-5 px-5 rounded-2xl flex flex-col gap-10 hover:shadow-lg transition duration-500 md:relative md:top-3"
+      >
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="text-gray-500 pb-3">Active Users</p>
+            <p class="font-bold text-2xl">12,403</p>
+          </div>
+          <div class="bg-gray-800/10 w-fit p-2 rounded-md">
+            <img
+              src="https://img.icons8.com/?size=100&id=2wxkb9m1B6s5&format=png&color=7950F2"
+              alt="Users icon"
+              class="w-6"
+            />
+          </div>
+        </div>
+        <div class="flex justify-between items-center">
+          <div
+            class="flex items-center gap-1 bg-green-700/10 w-fit py-0.5 px-1.5 rounded-2xl"
+          >
+            <img
+              src="https://img.icons8.com/?size=100&id=14906&format=png&color=40C057"
+              alt="Arrow icon"
+              class="w-4"
+            />
+            <p class="text-sm text-green-600">+5.4%</p>
+          </div>
+          <p class="text-gray-700 text-sm">Last 30 days</p>
+        </div>
+      </div>
+      <!-- Second Card -->
+      <div
+        class="bg-white py-5 px-5 rounded-2xl flex flex-col gap-10 hover:shadow-lg transition duration-500 mt-7"
+      >
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="text-gray-500 pb-3">Bounce Rate</p>
+            <p class="font-bold text-2xl">42.3%</p>
+          </div>
+          <div class="bg-gray-800/10 w-fit p-2 rounded-md">
+            <img
+              src="https://img.icons8.com/?size=100&id=EemQMHU0CMCF&format=png&color=7950F2"
+              alt="Purlse icon"
+              class="w-6"
+            />
+          </div>
+        </div>
+        <div class="flex justify-between items-center">
+          <div
+            class="flex items-center gap-1 bg-green-700/10 w-fit py-0.5 px-1.5 rounded-2xl"
+          >
+            <img
+              src="https://img.icons8.com/?size=100&id=14906&format=png&color=40C057"
+              alt="Arrow icon"
+              class="w-4"
+            />
+            <p class="text-sm text-green-600">-2.1%</p>
+          </div>
+          <p class="text-gray-700 text-sm">Average Session</p>
+        </div>
+      </div>
+      <!-- Third Card -->
+      <div
+        class="bg-white py-5 px-5 rounded-2xl flex flex-col gap-10 hover:shadow-lg transition duration-500 mt-7"
+      >
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="text-gray-500 pb-3">Pending Orders</p>
+            <p class="font-bold text-2xl">147</p>
+          </div>
+          <div class="bg-gray-800/10 w-fit p-2 rounded-md">
+            <img
+              src="https://img.icons8.com/?size=100&id=15893&format=png&color=7950F2"
+              alt="Cart icon"
+              class="w-6"
+            />
+          </div>
+        </div>
+        <div class="flex justify-between items-center">
+          <div
+            class="flex items-center gap-1 bg-green-700/10 w-fit py-0.5 px-1.5 rounded-2xl"
+          >
+            <img
+              src="https://img.icons8.com/?size=100&id=14906&format=png&color=40C057"
+              alt="Arrow icon"
+              class="w-4"
+            />
+            <p class="text-sm text-green-600">-1.2%</p>
+          </div>
+          <p class="text-gray-700 text-sm">Requires Attention</p>
+        </div>
+      </div>
+    </section>
+    <section class="pt-10 mx-6 md:mx-8 lg:mx-16 pb-40">
+      <p class="font-bold text-gray-800/95 text-lg pb-6">Operational Metrics</p>
+      <div class="flex flex-col gap-5 md:grid md:grid-cols-2">
+        <!-- First Card -->
+        <div>
+          <div
+            class="bg-white py-5 px-5 rounded-2xl flex flex-col gap-10 hover:shadow-lg transition duration-500"
+          >
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-gray-500 pb-1">Avg. Order Value</p>
+                <p class="font-bold text-2xl">$245.00</p>
+              </div>
+              <div class="bg-gray-800/10 w-fit p-2 rounded-md">
+                <img
+                  src="https://img.icons8.com/?size=100&id=86620&format=png&color=7950F2"
+                  alt="Card icon"
+                  class="w-6"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second Card -->
+        <div>
+          <div
+            class="bg-white py-5 px-5 rounded-2xl flex flex-col gap-10 hover:shadow-lg transition duration-500"
+          >
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-gray-500 pb-1">Conversation Rate</p>
+                <p class="font-bold text-2xl">3.6%</p>
+              </div>
+              <div class="bg-gray-800/10 w-fit p-2 rounded-md">
+                <img
+                  src="https://img.icons8.com/?size=100&id=EcFywLx2Fca5&format=png&color=7950F2"
+                  alt="Arrow icon"
+                  class="w-6"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Third Card -->
+        <div>
+          <div
+            class="bg-white py-5 px-5 rounded-2xl flex flex-col gap-10 hover:shadow-lg transition duration-500"
+          >
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-gray-500 pb-1">New Leads</p>
+                <p class="font-bold text-2xl">892</p>
+              </div>
+              <div class="bg-gray-800/10 w-fit p-2 rounded-md">
+                <img
+                  src="https://img.icons8.com/?size=100&id=hzQvJDFKC5bI&format=png&color=7950F2"
+                  alt="Breifcase icon"
+                  class="w-6"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Forth Card -->
+        <div>
+          <div
+            class="bg-white py-5 px-5 rounded-2xl flex flex-col gap-10 hover:shadow-lg transition duration-500"
+          >
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-gray-500 pb-1">Uptime</p>
+                <p class="font-bold text-2xl">99.9%</p>
+              </div>
+              <div class="bg-gray-800/10 w-fit p-2 rounded-md">
+                <img
+                  src="https://img.icons8.com/?size=100&id=34&format=png&color=7950F2"
+                  alt="Time icon"
+                  class="w-6"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
