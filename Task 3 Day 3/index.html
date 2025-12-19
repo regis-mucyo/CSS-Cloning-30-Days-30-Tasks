@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/output.css" rel="stylesheet" />
     <title>Responsive Navbar UI Design Dribbble</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const humburger = document.querySelector(".humburger");
+        const closeIcon = document.querySelector(".closeIcon");
+        humburger.addEventListener("click", () => {
+          humburger.classList.toggle("hidden");
+          closeIcon.classList.toggle("hidden");
+        });
+        closeIcon.addEventListener("click", () => {
+          humburger.classList.toggle("hidden");
+          closeIcon.classList.toggle("hidden");
+        });
+      });
+    </script>
   </head>
   <body class="bg-gray-100">
     <nav>
@@ -14,11 +28,18 @@
         >
           BrandName
         </p>
-        <img
-          src="https://img.icons8.com/?size=100&id=36389&format=png&color=1A1A1A"
-          alt="Hamburger"
-          class="w-7 md:hidden lg:hidden"
-        />
+        <div>
+          <img
+            src="https://img.icons8.com/?size=100&id=36389&format=png&color=1A1A1A"
+            alt="Hamburger"
+            class="w-7 md:hidden lg:hidden humburger"
+          />
+          <img
+            src="https://img.icons8.com/?size=100&id=NvQ7QXYyF7eO&format=png&color=4D4D4D"
+            alt="Close"
+            class="w-8 hidden md:hidden lg:hidden closeIcon"
+          />
+        </div>
       </div>
     </nav>
   </body>
