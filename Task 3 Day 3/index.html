@@ -9,18 +9,18 @@
       document.addEventListener("DOMContentLoaded", () => {
         const humburger = document.querySelector(".humburger");
         const closeIcon = document.querySelector(".closeIcon");
-        humburger.addEventListener("click", () => {
+        const menu = document.querySelector(".menu");
+        const toggleMenu = () => {
           humburger.classList.toggle("hidden");
           closeIcon.classList.toggle("hidden");
-        });
-        closeIcon.addEventListener("click", () => {
-          humburger.classList.toggle("hidden");
-          closeIcon.classList.toggle("hidden");
-        });
+          menu.classList.toggle("hidden");
+        };
+        humburger.addEventListener("click", toggleMenu);
+        closeIcon.addEventListener("click", toggleMenu);
       });
     </script>
   </head>
-  <body class="bg-gray-100">
+  <body class="bg-gray-100 w-full">
     <nav>
       <div class="bg-white shadow-md flex justify-between items-center p-4">
         <p
@@ -41,6 +41,9 @@
           />
         </div>
       </div>
+      <div
+        class="bg-white shadow-md w-full hidden md:hidden lg:hidden h-96 menu"
+      ></div>
     </nav>
   </body>
 </html>
